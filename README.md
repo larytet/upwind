@@ -1,4 +1,20 @@
+
 # upwind
+
+# 
+
+* APIs facilitating Kernel - user space communication
+* Linux thread vs linux process
+* What is docker?
+* 
+
+Design a log as a service intergrated with k8s (aka logz.io & friends)
+Answer: a side car collecting the logs (or a node, or a node+side cars), AWS ingress, AWS WAF, WEB servers pushing the logs into ElasticSearch and ApacheKafka
+A service runnign regex looking for alerts in the logs in Kafka, a service executing WEB hooks. 
+Follow up: how do we ensure low latency for the alerts? high availability? no missing logs? points of failure? system limitations? 
+
+
+# eBPF coding exercise
 
 ```
 // Write Network Observatility utility using BFP program.
